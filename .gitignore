@@ -1,0 +1,13 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+
+# Build results
+bin/
+obj/
+packages/
+
+# Entity Framework
+*.jfm
