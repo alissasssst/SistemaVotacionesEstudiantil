@@ -71,6 +71,7 @@
             this.btnUsuarios.Size = new System.Drawing.Size(220, 40);
             this.btnUsuarios.Text = "👥 Registro de Usuarios";
             this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
 
             // btnReportes
             this.btnReportes.Location = new System.Drawing.Point(15, 215);

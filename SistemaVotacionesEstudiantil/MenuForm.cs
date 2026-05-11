@@ -24,5 +24,11 @@ namespace SistemaVotacionesEstudiantil
         {
             Application.Exit();
         }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            var form = new UsuariosForm();
+            form.ShowDialog(); // Abre como ventana modal (o Show() si prefieres)
+        }
     }
 }
