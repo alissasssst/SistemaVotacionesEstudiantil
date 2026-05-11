@@ -72,6 +72,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CandidatosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CandidatosForm.Designer.cs">
+      <DependentUpon>CandidatosForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data\AppDbContext.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -96,6 +102,12 @@
     <Compile Include="Models\Plancha.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Models\Votacion.cs" />
+    <Compile Include="PlanchasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanchasForm.Designer.cs">
+      <DependentUpon>PlanchasForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sesion.cs" />

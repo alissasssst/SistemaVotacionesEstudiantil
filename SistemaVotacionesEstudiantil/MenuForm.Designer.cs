@@ -64,6 +64,7 @@
             this.btnPlanchas.Size = new System.Drawing.Size(220, 40);
             this.btnPlanchas.Text = "🏛️ Planchas Electorales";
             this.btnPlanchas.UseVisualStyleBackColor = true;
+            this.btnPlanchas.Click += new System.EventHandler(this.btnPlanchas_Click);
 
             // btnUsuarios
             this.btnUsuarios.Location = new System.Drawing.Point(15, 165);
