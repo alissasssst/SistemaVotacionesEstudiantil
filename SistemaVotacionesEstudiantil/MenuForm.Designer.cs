@@ -31,7 +31,7 @@
             this.lblBienvenido.Size = new System.Drawing.Size(200, 25);
             this.lblBienvenido.Text = "Bienvenido, Usuario";
 
-            // panelMenu
+            // panelMenu (zona lateral con los botones)
             this.panelMenu.BackColor = System.Drawing.Color.LightSteelBlue;
             this.panelMenu.Controls.Add(this.btnVotar);
             this.panelMenu.Controls.Add(this.btnDatosGenerales);
@@ -58,6 +58,7 @@
             this.btnDatosGenerales.Size = new System.Drawing.Size(220, 40);
             this.btnDatosGenerales.Text = "📊 Datos Generales";
             this.btnDatosGenerales.UseVisualStyleBackColor = true;
+            this.btnDatosGenerales.Click += new System.EventHandler(this.btnDatosGenerales_Click);
 
             // btnPlanchas
             this.btnPlanchas.Location = new System.Drawing.Point(15, 115);

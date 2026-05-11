@@ -13,10 +13,28 @@ namespace SistemaVotacionesEstudiantil
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
+            // Cerrar sesión y volver al login
             Sesion.UsuarioActual = null;
             var login = new LoginForm();
             login.Show();
             this.Close();
+        }
+
+        private void MenuForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            var form = new UsuariosForm();
+            form.ShowDialog(); // Abre como ventana modal (o Show() si prefieres)
+        }
+
+        private void btnPlanchas_Click(object sender, EventArgs e)
+        {
+            var form = new PlanchasForm();
+            form.ShowDialog();
         }
 
         private void btnVotar_Click(object sender, EventArgs e)
@@ -30,24 +48,10 @@ namespace SistemaVotacionesEstudiantil
             form.ShowDialog();
         }
 
-        private void btnPlanchas_Click(object sender, EventArgs e)
+        private void btnDatosGenerales_Click(object sender, EventArgs e)
         {
-            var form = new PlanchasForm();
+            var form = new DashboardForm();
             form.ShowDialog();
-        }
-
-        private void btnUsuarios_Click(object sender, EventArgs e)
-        {
-            var form = new UsuariosForm();
-            form.ShowDialog();
-        }
-
-        // Los demás botones (Datos Generales, Reportes) los implementaremos en próximos módulos.
-        // Por ahora los dejamos sin manejador, pero no deberían causar errores.
-
-        private void MenuForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
         }
     }
 }
