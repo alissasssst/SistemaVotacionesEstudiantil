@@ -13,7 +13,6 @@ namespace SistemaVotacionesEstudiantil
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
-            // Cerrar sesión y volver al login
             Sesion.UsuarioActual = null;
             var login = new LoginForm();
             login.Show();
@@ -28,7 +27,7 @@ namespace SistemaVotacionesEstudiantil
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
             var form = new UsuariosForm();
-            form.ShowDialog(); // Abre como ventana modal (o Show() si prefieres)
+            form.ShowDialog();
         }
 
         private void btnPlanchas_Click(object sender, EventArgs e)
@@ -51,6 +50,13 @@ namespace SistemaVotacionesEstudiantil
         private void btnDatosGenerales_Click(object sender, EventArgs e)
         {
             var form = new DashboardForm();
+            form.ShowDialog();
+        }
+
+        // ✅ MÉTODO AÑADIDO
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            var form = new ReportesForm();
             form.ShowDialog();
         }
     }
