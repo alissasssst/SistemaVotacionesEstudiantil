@@ -9,7 +9,8 @@
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
+            ContextKey = "SistemaVotacionesEstudiantil.Data.AppDbContext";
         }
 
         protected override void Seed(SistemaVotacionesEstudiantil.Data.AppDbContext context)
