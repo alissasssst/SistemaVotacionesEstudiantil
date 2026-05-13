@@ -1,8 +1,7 @@
-﻿using SistemaVotacionesEstudiantil.Data;
-using System;
-using System.Data.SqlClient;
+﻿using System;
 using System.Linq;
 using System.Windows.Forms;
+using SistemaVotacionesEstudiantil.Data;
 
 namespace SistemaVotacionesEstudiantil
 {
@@ -29,10 +28,9 @@ namespace SistemaVotacionesEstudiantil
                 }
 
                 Sesion.UsuarioActual = usuario;
-                Sesion.UsuarioActual = usuario;
                 var menu = new MenuForm();
                 menu.Show();
-                this.Hide();   // Oculta el login, no lo cierra
+                this.Hide();
             }
         }
 
